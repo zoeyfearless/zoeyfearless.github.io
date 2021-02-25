@@ -12,10 +12,6 @@ H2 - Amatic
 Body - Oswald
 */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-html { font-size: 22px; }
-
 .container {
   width: 80%;
   margin: 0 auto;
@@ -30,25 +26,14 @@ header img {
 	transform: translateX(-50%);
 }
 
+
 body{
-  height:100vh;
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
   font-family: 'Roboto', sans-serif;
 }
-
-h2{
-  margin:0px;
-  text-transform: uppercase;
-}
-
-h6{
-  margin:0px;
-  color:#777;
-}
-
 .wrapper{
   text-align:center;
   margin:50px auto;

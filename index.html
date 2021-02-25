@@ -6,8 +6,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<link rel="stylesheet" href="styles/normalize.css">
-		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="main.css">
+	 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	 	<script src="script.js"></script>
 		
 		<title>Ace Rider Motorcycle School</title>
 	  
@@ -18,27 +20,33 @@
 	<body>
 	<header>
 		<picture>
-			<source media="(max-width: 576px)"
+			<source media="(max-width: 900px)"
             	srcset="img/header-576.png">
-			<source media="(max-width: 992px)"
+			<source media="(max-width: 1400px)"
             	srcset="img/header-992.png">
-			<source media="(max-width: 1546px)"
+			<source media="(max-width: 1700px)"
          		 srcset="img/header-1546.png">
-    		
+			<source media="(max-width: 2560px)"
+         		 srcset="img/header-2560.png">
 			
-			<img src="img/header-1546.png">
+			<img src="img/header-1546.png" 
+				 alt="Ace Rider Motorcycle School">
 		</picture>
+		
+		<div class="wrapper">
+ 	<nav class="tabs">
+    	<div class="selector"></div>
+    		<a href="#" class="active"><i class="fab fa-superpowers"></i>Home</a>
+    		<a href="#"><i class="fas fa-hand-rock"></i>Courses</a>
+   			<a href="#"><i class="fas fa-bolt"></i>About Us</a>
+    		<a href="#"><i class="fas fa-burn"></i>Contact</a>
+ 	</nav>
+		</div>
+		
 	</header>
 		
 		<div class="container">
-		<!--contents of the page will go here.
-
-576px for extra small devices like portrait mode phones
-768px for small devices like landscape phones
-992px for medium devices like tablets
-1200px for large devices like desktops
-2560px for extra large devices like large desktops
-																	-->
+		<!--contents of the page will go here.-->
 		</div>
 			 
 	
