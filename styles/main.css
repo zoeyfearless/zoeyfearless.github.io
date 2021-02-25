@@ -1,0 +1,15 @@
+html { font-size: 22px; }
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+	overflow: hidden;
+}
+
+header img {
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
