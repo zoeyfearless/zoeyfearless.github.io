@@ -13,9 +13,16 @@ H2 - Amatic
 Body - Oswald
 */
 
+p {
+	text-align: center;
+	font-size: 40px;
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
+  height: 200px;
+  position: relative;
 }
 
 header {
