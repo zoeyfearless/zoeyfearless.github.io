@@ -23,12 +23,12 @@ Body -
     margin-bottom: 0px;
     margin-right: 0px;
     margin-top: 0px;
-	background: url('img/header-2560.png') no-repeat center top;
-  	background-size: cover;
 }
 
 @media (max-width: 500px) {
-  background: url('img/header-460.png') no-repeat center top;
+  #hero{
+	  background-image: url('img/header-460.png');
+	}
 }
 
 p {
