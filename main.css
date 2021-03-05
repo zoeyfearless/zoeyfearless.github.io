@@ -25,12 +25,6 @@ Body -
     margin-top: 0px;
 }
 
-@media (max-width: 500px) {
-  #hero{
-	  background-image: url('img/header-460.png');
-	}
-}
-
 p {
 	text-align: center;
 	font-size: 40px;
