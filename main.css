@@ -14,6 +14,10 @@ H2 - Amatic
 Body - 
 */
 
+p{
+	font-size: .5em;
+}
+
 #hero {
     padding-left: 0px;
     padding-top: 0px;
@@ -128,3 +132,169 @@ body{
   background: linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05abe0', endColorstr='#8200f4',GradientType=1 );
 }
+
+ol.dtree,
+ul.dtree {
+  font-size: 1.1em;
+  margin-left: 0;
+  padding-left: 0;
+
+  padding: 10px 1em 10px 1em;
+  margin: 10px 3px 10px 0;
+  /* #587abc */
+  border: 1px solid #587abc;
+  border-radius: 10px;
+  background: rgba(230, 232, 237, .6);
+}
+
+ol.dtree li,
+ul.dtree li {
+  padding: 10px 1em 10px 2em;
+  margin: 10px 3px 20px 3px;
+  border: 1px solid #587abc;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 1px 10px 2px rgba(0,0,0,0.25);
+  cursor: pointer;
+}
+.dtree ul > li,
+.dtree > li {
+  list-style: none;
+}
+.dtree ol > li {
+  list-style: inherit !important;
+}
+ol.dtree li.active-trail,
+ul.dtree li.active-trail {
+  border: none;
+  font-weight: bolder;
+}
+ol.dtree > li,
+ul.dtree > li {
+  box-shadow: none;
+}
+ol.dtree li:before,
+ul.dtree li:before,
+.aw-page .accordion h4:before {
+  content: "\f0da";
+  display: inline-block;
+  padding-right: .7em;
+  margin-left: -1em;
+  font-family: FontAwesome;
+  opacity: 1;
+  color: #6d95cc;
+  font-size: 1.1em;
+  width: 1.25em;
+  text-align: center;
+}
+.aw-page .accordion h4:before{
+    margin-left: -1.25em;
+}
+ol.dtree li.open,
+ul.dtree li.open {
+  background: rgba(230, 232, 237, .6);
+  box-shadow: none;
+  border-width: 2px;
+  font-weight: bolder;
+}
+ol.dtree li.open li:not(.open),
+ul.dtree li.open li:not(.open) {
+  font-weight: normal;
+}
+ol.dtree li.open:before,
+ul.dtree li.open:before,
+.aw-page .accordion .open h4:before {
+  content: "\f0d7 ";
+}
+ol.dtree li.leaf:before,
+ul.dtree li.leaf:before {
+  position: absolute;
+  margin-left: -1.7em;
+  margin-top: -0.7em;
+/*   content: "\f05a "; */
+  content: none;
+  color: #dfa93c;
+}
+ol.dtree ol,
+ul.dtree ul {
+  padding-left: 0;
+}
+ol.dtree li.leaf,
+ul.dtree li.leaf {
+  border: 1px solid #ffae00;
+  border-radius: 10px;
+  background: #ffffff;
+  cursor: default;
+  padding-left: 1.5em !important;
+  list-style: none;
+}
+ol.dtree li  ol,
+ul.dtree li  ul {
+  display: none;
+}
+ol.dtree li.disabled,
+ul.dtree li.disabled {
+  opacity: .6;
+}
+
+
+
+ul.dtree li.leaf ul.dtree-ignore li,
+ol.dtree li.leaf ol.dtree-ignore li  {
+  border: none;
+  background: inherit;
+  box-shadow: none;
+  list-style: disc;
+  margin: 0;
+  padding: 0 0 0 5px !important;
+}
+ul.dtree ul.dtree-ignore,
+ol.dtree ol.dtree-ignore {
+  padding-left: 15px !important;
+  margin-left: 15px;
+}
+ul.dtree ul.dtree-ignore,
+ol.dtree ol.dtree-ignore {
+  display: inherit;
+  list-style: none;
+}
+
+.aw-page .accordion{
+    margin: 2em 0;
+}
+
+.aw-page .accordion>div>div, .accordion>section>section{
+    display: none;
+    padding: 1em;
+
+    border: solid #587abc;
+    border-width: 0px 1px 1px 1px ;
+    border-radius: 0px 0px 10px 10px ;
+}
+
+.aw-page .accordion>div, .accordion>section{
+    margin:1em 0;
+    border-radius: 10px;
+}
+
+.aw-page .accordion h4{
+    cursor: pointer;
+    background: rgba(230, 232, 237, .6);
+    margin: 0;
+    padding: .65em 1em .65em 2.25em;
+    border-radius: 10px ;
+    border: 1px solid #587abc;
+}
+
+.aw-page .accordion .open h4{
+    border-bottom: 1px solid #587abc;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+@media print{
+    .aw-page .accordion div{
+        display: block !important; 
+    }
+}
+
